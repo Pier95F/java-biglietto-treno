@@ -21,11 +21,19 @@ public class calcolaBiglietto {
 		
 		// Restituisci prezzo iniziale
 		float prezzoBiglietto = (float) (kmViaggio * 0.21);
-		System.out.print("Prezzo del biglietto : " + prezzoBiglietto);
+		System.out.println ("Prezzo del biglietto : " + prezzoBiglietto);
+		
+	
+		// Applica sconto sul biglietto
+		if (età <18) {
+			float bigliettoUnder = (float) (prezzoBiglietto - prezzoBiglietto * 0.2);
+			System.out.printf ("Prezzo scontato : %.2f " , bigliettoUnder);
+		} else if (età >65) {
+			float bigliettoOver = (float) (prezzoBiglietto - prezzoBiglietto * 0.4);
+			System.out.printf ("Prezzo scontato : %.2f " , bigliettoOver);
+		}
 		
  
-	    
-		
 	}
 	}
 
