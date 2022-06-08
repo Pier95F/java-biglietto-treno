@@ -32,11 +32,11 @@ public class calcolaBiglietto {
 		if (età <18) {
 			float bigliettoUnder = (float) (prezzoBiglietto - prezzoBiglietto * 0.2);
 			System.out.println("Hai diritto allo sconto minorenni");
-			System.out.println("Prezzo scontato : " + df.format(prezzoBiglietto));
+			System.out.println("Prezzo scontato : " + df.format(bigliettoUnder));
 		} else if (età >=65) {
 			float bigliettoOver = (float) (prezzoBiglietto - prezzoBiglietto * 0.4);
 			System.out.println("Hai diritto allo sconto over65");
-			System.out.println("Prezzo scontato : " + df.format(prezzoBiglietto));
+			System.out.println("Prezzo scontato : " + df.format(bigliettoOver));
 		}
 		
 		scanner.close();
